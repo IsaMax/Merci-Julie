@@ -1,65 +1,126 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Merci Julie</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
+      
+        <!-- Menu principal -->
+        <nav id="nav">  
+            <div id="logo-nav">
+                <a href="home.html">
+                <img src="assets/img/logos/Logo_Merci-Julie.png" alt="logo Merci Julie" />
+            </a>
+            </div>
+
+            <ul class="menu-items">
+                <li class="sub-item"><a href="">accueil</a></li>
+                <li class="sub-item"><a href="">merci julie</a></li>
+                <li class="sub-item"><a href="">nos offres</a></li>
+                <li class="sub-item"><a href="">nos innovations</a></li>
+                <li class="sub-item"><a href="">actualités</a></li>
+                <li class="sub-item"><a href="">espace partenaires</a></li>
+                <li class="sub-item contact-item"><a href="">nous contacter</a></li>
+            </ul>
+
+            <button class="btn-hamburger"></button>
+        </nav>
+
+        <!-- BreadCrumb -->
+        <div class="bc">
+            <ul>
+                <li class="bc-item"><a href="home.html">Accueil</a></li>
+                <li class="bc-item active">Merci Julie</li>
+            </ul>
+        </div>
 
           <!-- Gabarit des landing bloc -->
           <section id="landing-bloc">
-            <div class="desc">
-                <h3></h3>
-                <hr />
-                <p></p>
+
+            <div class="title-desc">
+                <h3>Merci Julie</h3>
+                <hr class="hr-black" />
             </div>
+
             <div class="cards">
 
                 <div class="card-item">
                     <div class="bck-logo"></div>
-                    <h2></h2>
-                    <p></p>
-                    <button class="btn-more"></button>
+                    <h2>Qui sommes-nous ?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+                    <a class="btn-more orange" href="">découvrir</a>
                 </div>
+
                 <div class="card-item">
                     <div class="bck-logo"></div>
-                    <h2></h2>
-                    <p></p>
-                    <button class="btn-more"></button>
+                    <h2>Où sommes-nous ?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+                    <a class="btn-more orange" href="">découvrir</a>
                 </div>
+
                 <div class="card-item">
                     <div class="bck-logo"></div>
-                    <h2></h2>
-                    <p></p>
-                    <button class="btn-more"></button>
+                    <h2>Rejoindre notre équipe</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+                    <a class="btn-more orange" href="">découvrir</a>
                 </div>
+
                 <div class="card-item">
                     <div class="bck-logo"></div>
-                    <h2></h2>
-                    <p></p>
-                    <button class="btn-more"></button>
-                </div>
-                <div class="card-item">
-                    <div class="bck-logo"></div>
-                    <h2></h2>
-                    <p></p>
-                    <button class="btn-more"></button>
+                    <h2>Réseaux de partenaires</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+                    <a class="btn-more orange" href="">découvrir</a>
                 </div>
 
             </div>
         </section>
 
+        <footer id="footer">
+            <div class="cate-footer">
+                <p>Merci Julie</p>
+                <hr class="hr-white">
+                <a class="btn-more white" href="" >rejoindre l'équipe</a>
+            </div>
+
+            <div class="cate-footer">
+                <p>Espace partenaires</p>
+                <hr class="hr-white">
+                <a class="btn-more white" href="" >devenir partenaire</a>
+            </div>
+
+            <div class="cate-footer">
+                <p>Réseaux sociaux</p>
+                <hr class="hr-white">
+                <div class="bloc-network">
+                    <a href=""><i class="facebook"></i></a>
+                    <a href=""><i class="linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="cate-footer">
+                <p>Nous contacter</p>
+                <hr class="hr-white">
+                <p class="txt-mini">par téléphone au <a class="tel" href"tel:+33180876922">01.80.87.69.22</a><br>
+                    ou par e-mail <a class="mail" href="">(Accéder au formulaire)</a>.</p>
+                <p class="txt-mini">Mentions légales</p>
+            </div>
+        </footer>
 
 
 

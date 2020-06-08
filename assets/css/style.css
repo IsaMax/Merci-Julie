@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+ margin: 0;
+ font-family: 'roboto', sans-serif;
+ color: var(--gris);
+ margin-top: 72px;
+}
+
+:root {
+    
+    --orange: #EC6548;
+    --gris: #525252;
+}
+
+@font-face {
+    font-family: 'Volkswagen-Bold';
+    src: url(../font/Volkswagen-Bold.otf);
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url(../font/fontello.ttf);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+hr {
+    width: 39px;
+    height: 2px;
+    margin-top: 33px;
+    margin-bottom: 35px;
+}
+
+.hr-white {
+    background-color: #FFF;
+}
+
+.hr-black {
+    background-color: var(--gris);
+}
+
+.btn-more {
+    display: block;
+    width: 176px;
+    height: 37px;
+    font-size:  0.94em;
+    line-height: 34px;
+    text-align: center;
+    border: 3px solid;
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Volkswagen-Bold', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-desc h3 {
+    color: var(--orange);
+    font-size: 2.875em;
+    margin: 0;
+}
+
+.bc {
+    padding: 41px 0;
+    margin-left: 10%;
+}
+
+.bc ul {
+    display: flex;
+}
+
+.bc .bc-item {
+    font-size: 0.75em;
+    position: relative;
+}
+
+.bc .bc-item a {
+    color: var(--gris);
+}
+
+.bc .bc-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.bc .bc-item:not(:last-child):after {
+   content: "-";
+   position: absolute;
+   right: -6px;
+   top: 0;
+}
+
+.bc .bc-item.active {
+    color: var(--orange);
+}
+
+
+/****** Menu principal ******/
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 96px;
+    height: 72px;
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: #FFF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+}
+
+.menu-items {
+    width: 100%;
+    margin-left: 14.8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items .sub-item { 
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    font-size: 0.94em;  
+    text-transform: uppercase; 
+}
+
+.sub-item a {
+    color: var(--gris);
+    transition: all .2s;
+}
+
+.sub-item a:hover {
+    color: var(--orange);
+    -webkit-text-stroke: .5px;
+}
+
+.sub-item a:before {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: var(--orange);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    transition: all .1s;
+}
+
+.sub-item a:hover:before {
+    width: 39px;
+}
+
+.sub-item.contact-item {
+    padding: 28px;
+    background-color: #F2EEEE;
+
+}
+
+.sub-item.contact-item a:before {
+    bottom: 24px;
+}
+
+.sub-item.contact-item a {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.sub-item.contact-item a:hover {
+    -webkit-text-stroke: 0;
+}
+
+.btn-hamburger {
+    display: none;
+}
+
+
+/****** Footer ******/
+
+#footer {
+    height: 363px;
+    padding-top: 92px;;
+    background-color: var(--gris);
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.cate-footer:not(:last-child) {
+    margin-right: 90px;
+}
+
+.cate-footer p {
+    margin: 0;
+    font-family: 'Volkswagen-Bold', sans-serif;
+    font-size: 1.625em;
+    color: #FFF;
+}
+
+.cate-footer hr {
+    margin: 21px 0;
+}
+
+.cate-footer .btn-more.white {
+    color: #FFF;
+    border-color: #FFF;
+}
+
+.cate-footer .txt-mini {
+    font-size: 1.125em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.txt-mini {
+    line-height: 25px;
+}
+
+.txt-mini .tel {
+    font-weight: bold;
+}
+
+.txt-mini .mail {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+.txt-mini:last-child {
+    margin-top: 25px;
+}
+
+.bloc-network {
+    display: flex;
+}
+
+.bloc-network i {
+    font-style: normal;
+}
+
+.bloc-network .facebook:after {
+    content: "f";
+    font-family: 'fontello', sans-serif;
+    color: var(--gris);
+    font-size: 3.3em;
+    position: absolute;
+    right: 11px;
+    bottom: -22px;
+}
+
+.bloc-network .linkedin:after {
+    content: "in";
+    font-family: 'fontello', sans-serif;
+    color: var(--gris);
+    font-size: 1.8em;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bloc-network a {
+    position: relative;
+    display: block;
+    width: 38px;
+    height: 38px;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+.bloc-network a:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+/****** Landing pages *******/
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 155px;
+}
+
+.cards .card-item {
+    width: 33%;
+    min-width: 33%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 67px;
+}
+
+.cards .card-item h2 {
+    color: var(--gris);
+    font-size: 1.625em;
+    margin-top: 43px;
+    margin-bottom: 33px;
+}
+
+.cards .card-item p {
+    font-size: 1.125em;
+    line-height: 27px;
+    margin: 35px 2.2rem;
+    height: auto;
+   
+}
+
+.cards .btn-more.orange {
+    background-color: var(--orange);
+    color: #FFF;
+    margin: 0 auto;
+}
+
+.cards .card-item .bck-logo {
+    width: 176px;
+    height: 176px;
+    box-shadow: 0px 3px 6px #00000029;
+    background: #F6F6F6;
+    margin: 0 auto;
+}
