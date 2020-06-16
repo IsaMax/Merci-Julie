@@ -46,67 +46,95 @@
         <div class="bc">
             <ul>
                 <li class="bc-item"><a href="home.html">Accueil</a></li>
-                <li class="bc-item active">Nos innovations</li>
+                <li class="bc-item active">Nous contacter</li>
+               
             </ul>
         </div>
 
-          <!-- Gabarit des landing bloc -->
-          <section id="landing-bloc">
 
-            <div class="title-desc">
-                <h3>Nos innovations</h3>
-                <hr class="hr-black" />
-            </div>
+        <div class="container-title-desc ep">
+            <h1 class="title-desc">
+                <span class="txt-orange">Nous contacter</span>
+                <hr class="tiret-black" />
+                <span class="txt-gris">Vous pouvez nous contacter au <a href="tel:0180876922">01.80.87.69.22. </a><br>Cliquez sur l'un des icônes pour :</span>
+            </h1>
+        </div>
+
+        
+        <section id="landing-bloc" class="presentation-bloc contact">
 
             <div class="cards">
-
-                <div class="card-item">
-                    <div class="bck-logo">
-                        <img src="assets/img/pictos/video.svg" alt="" />
+               
+                    <div class="card-item">
+                        <a href="">
+                        <div class="bck-logo">
+                            <img src="assets/img/pictos/" alt="" />
+                        </div>
+                        <h2>Demander un rendez-vous</h2>
+                    </a>
                     </div>
-                    <h3>Vidéos</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
-                    <a class="btn-more orange" href="">découvrir</a>
-                </div>
+               
+              
+                    <hr class="hr-black">
 
-                <div class="card-item">
-                    <div class="bck-logo">
-                        <img src="assets/img/pictos/r_et_d.svg" alt="" />
+                   
+                    <div class="card-item">
+                        <a href="">
+                        <div class="bck-logo">
+                            <img src="assets/img/pictos/infos.svg" alt="" />
+                        </div>
+                        <h2>Demander des informations</h2>
+                    </a>
                     </div>
-                    <h3>Recherche et développement</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
-                    <a class="btn-more orange" href="">découvrir</a>
-                </div>
+               
 
-                <div class="card-item">
-                    <div class="bck-logo">
-                        <img src="assets/img/pictos/ergo.svg" alt="" />
-                    </div>
-                    <h3>Ergothérapeutes/CESF</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
-                    <a class="btn-more orange" href="">découvrir</a>
-                </div>
+                <hr class="hr-black">
 
-                <div class="card-item">
-                    <div class="bck-logo">
-                        <img src="assets/img/pictos/usage.svg" alt="" />
-                    </div>
-                    <h3>Cas d'usage</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
-                    <a class="btn-more orange" href="">découvrir</a>
-                </div>
                 
-                <div class="card-item">
-                    <div class="bck-logo">
-                        <img src="assets/img/pictos/temoignages.svg" alt="" />
+                    <div class="card-item">
+                        <a href="">
+                        <div class="bck-logo">
+                            <img src="assets/img/pictos/rejoindre.svg" alt="" />
+                        </div>
+                        <h2>Rejoindre notre équipe</h2>
+                    </a>
                     </div>
-                    <h3>Témoignages</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
-                    <a class="btn-more orange" href="">découvrir</a>
-                </div>
-
+               
             </div>
         </section>
+
+
+        <div class="container-contact-form temp active contact">
+            
+            <div class="container-title-desc white">
+                <h3 class="title-desc">
+                    <span class="txt-orange">Demande de rendez-vous</span>
+                    <hr>
+                    <span class="txt-gris"> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </span>
+                </h3>
+            </div>
+
+            <form action="" method="">
+                <input type="text" name="objet" placeholder="Objet de votre demande*" required>
+                <div class="container-bloc-contact">
+                <div class="bloc-contact gauche">
+                    <input type="text" name="nom" id="nom" placeholder="Votre nom*" required="">
+                    <input type="text" name="prenom" id="prenom" placeholder="Votre prénom*" required="">
+                    <input type="email" name="email" id="email" placeholder="Votre entreprise/organisme/établissement*" required="">
+                    <input type="email" name="email" id="email" placeholder="Votre adresse e-mail*" required="">
+                    <input type="tel" name="email" id="email" placeholder="Votre numéro de téléphone*" required="">
+                </div>
+                <div class="bloc-contact droite">
+                    <textarea placeholder="Votre message*" required=""></textarea>
+                    <input class="btn-more white postuler" type="submit" value="envoyer">
+                </div>
+               
+            </div>
+          
+            </form>
+        </div>
 
         <footer id="footer">
             <div class="cate-footer">
@@ -139,8 +167,6 @@
             </div>
         </footer>
 
-
-
-        <script src="" async defer></script>
+        <script src="assets/js/espace-partenaires.js" async defer></script>
     </body>
 </html>

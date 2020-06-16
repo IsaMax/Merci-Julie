@@ -1,43 +1,307 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Merci Julie</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-
-        <section class="bloc-tb">
-
-            <h3>
-                <span class="txt-orange"></span>
-                <span class="txt-bold"></span>
-            </h3>
-
-            <div class="bloc-top"></div>
-            <div class="bloc-bottom">
-                <article>
-                    <h4></h4>
-                    <hr class="hr-white" />    
-
-                    <div class="txt-formate">
-                        <p></p>
-                        <p></p>
-                    </div>
-                    <button class="btn-more white"></button>
-                </article>
+      
+        <!-- Menu principal -->
+        <nav id="nav">  
+            <div id="logo-nav">
+                <a href="home.html">
+                <img src="assets/img/logos/Logo_Merci-Julie.png" alt="logo Merci Julie" />
+            </a>
             </div>
 
+            <ul class="menu-items">
+                <li class="sub-item"><a href="">accueil</a></li>
+                <li class="sub-item"><a href="">merci julie</a></li>
+                <li class="sub-item"><a href="">nos offres</a></li>
+                <li class="sub-item"><a href="">nos innovations</a></li>
+                <li class="sub-item"><a href="">actualités</a></li>
+                <li class="sub-item"><a href="">espace partenaires</a></li>
+                <li class="sub-item contact-item"><a href="">nous contacter</a></li>
+            </ul>
+
+            <button class="btn-hamburger"></button>
+        </nav>
+
+        <!-- BreadCrumb -->
+        <div class="bc">
+            <ul>
+                <li class="bc-item"><a href="home.html">Accueil</a></li>
+                <li class="bc-item"><a href="home.html">Nos offres</a></li>
+                <li class="bc-item active">Page type</li>
+            </ul>
+        </div>
+
+        
+        <div class="container-title-desc">
+            <h1 class="title-desc">
+                <span class="txt-orange">Lorem Ipsum</span>
+                <hr class="tiret-black" />
+                <span class="txt-gris">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</span>
+            </h1>
+        </div>
+
+        <section class="container-bloc-desc-av">
+            <div class="bloc-desc-av gauche">
+                <div class="container-bloc-g">
+                    <div class="part-fond orange">
+                        <div class="txt">
+                            <h4>description</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
+                        </div>
+                    </div>
+                    <div class="part-fond gris">
+                        <div class="txt">
+                            <h4>Les avantages</h4>
+                            <ul class="orange">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-bloc-d"></div>
+            </div>
+        </section>
+
+        <section class="container-bloc-desc-av">
+            <div class="bloc-desc-av droite">
+                <div class="container-bloc-g">
+                    <div class="part-fond orange">
+                        <div class="txt">
+                            <h4>description</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>
+                        </div>
+                    </div>
+                    <div class="part-fond gris">
+                        <div class="txt">
+                            <h4>Les avantages</h4>
+                            <ul class="orange">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-bloc-d"></div>
+            </div>
+
+        </section>
+
+        <div class="container-swiper-actu">
+            <div class="swiper-container swiper-actu">
+              
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/actu1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/actu2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/actu3.jpg" alt="">
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <img src="assets/img/actu4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/actu5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/actu6.jpg" alt="">
+                    </div>
+                </div>
+               
+            </div>
+             
+            <div class="swiper-pagination"></div>
+            
+            <div class="swiper-button-prev fleche-gauche"></div>
+             <div class="swiper-button-next fleche-droite"></div>
+        </div>
+
+        <section class="bandeau-photo"></section>
+
+        <section class="container-img-txt">
+            <div class="img-txt gd">
+                <div class="img">
+                    <img src="" alt="" />
+                </div>
+                <div class="txt-formate">
+                    <p>Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut postulatus, capite vel multatione bonorum aut insulari solitudine damnabatur. Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas de Catone; aut enim. Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut postulatus, capite vel multatione bonorum aut insulari solitudine damnabatur. Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas.
+                        </p>
+                    <ul class="orange">
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-img-txt">
+            <div class="img-txt dg">
+                <div class="img">
+                    <img src="" alt="" />
+                </div>
+                <div class="txt-formate">
+                    <p>Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut postulatus, capite vel multatione bonorum aut insulari solitudine damnabatur. Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas de Catone; aut enim. Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut postulatus, capite vel multatione bonorum aut insulari solitudine damnabatur. Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas.
+                        </p>
+                    <ul class="orange">
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="photo-centre taille-gabarit">
+            <img
+                alt=""
+                src=""
+                srcset="image-s.jpg 320w,
+                        image-m.jpg 960w,
+                        image-l.jpg 1920w" 
+                "><!-- 1170px * 653px -->
+        </section>
+
+        <section class="citation">
+            <blockquote>
+                " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in. "
+                <cite></cite>
+            </blockquote>
+        </section>
+
+        <section class="bloc-tb">                  
+            <div class="container-bloc-tb">
+                <div class="bloc-top">
+                  
+                </div>
+                <div class="bloc-bottom">
+                    <article>
+                        <h4>à propos</h4>
+                        <hr class="hr-white" />    
+
+                        <div class="txt-formate">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit. </p>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</p>
+                        </div>
+                        <a href="" class="btn-more white">en savoir plus</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="bloc-tb">                  
+            <div class="container-bloc-tb inverse">
+                <div class="bloc-top">
+                  
+                </div>
+                <div class="bloc-bottom">
+                    <article>
+                        <h4>à propos</h4>
+                        <hr class="hr-white" />    
+
+                        <div class="txt-formate">
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit. </p>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</p>
+                        </div>
+                        <a href="" class="btn-more white">en savoir plus</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-txt-multicolonne">
+            <div class="txt-multicolonne">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut postulatus, capite vel multatione bonorum aut insulari solitudine damnabatur.</p>
+                <p>
+                     Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas de Catone; aut enim nemo, quod quidem magis credo, aut si quisquam, ille sapiens fuit. Quo modo, ut alia omittam, mortem filii tulit! memineram Paulum, videram Galum, sed hi in pueris, Cato in perfecto et spectato viro. Alii summum decus in carruchis solito altioribus et ambitioso vestium cultu ponentes sudant sub ponderibus lacernarum, quas in collis.</p>
+                <p>Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut postulatus, capite vel multatione bonorum aut insulari solitudine damnabatur. Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas de Catone; aut enim.</p>
+                
+                <ul class="orange">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li> 
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section class="container-txt-centre">
+            <div class="bloc-txt">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Le soutien des soignants et des aidants proches est un enjeu crucial.</p>
+                <p>Notre démarche "auprès et avec" les aidants en situation d'apprentissage vise un programme interactif de formation liée à la compréhension du corps en mouvement, à la mise en œuvre de techniques de mobilisation active basées sur des données probantes et à la promotion de l'utilisation des aides techniques au transfert pour faciliter le quotidien des soignants.</p>
+            </div>
+        </section>
+
+        <section class="container-bloc-gd" style="margin-bottom: 3rem;">
+            <div class="bloc gauche">
+                <h4>Lorem Ipsum</h4>
+                <p>Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut postulatus, capite vel multatione bonorum aut insulari solitudine damnabatur.</p>
+            </div>
+            <div class="bloc droite">
+                <h4>Lorem Ipsum</h4>
+                <ul class="orange">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bandeau-footer">
+            <div class="container-txt">
+                <h4 class="gris">Vous souhaitez profiter de cette offre ou demander des renseignements supplémentaires ?</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                <a href="" class="btn-more orange">contactez-nous</a>
+                <hr class="hr-orange">
+                <h4 class="gris">Partagez cette page par email</h4>
+                <a href="" class="btn-more orange">partagez</a>
+            </div>
         </section>
 
         <footer id="footer">
@@ -71,7 +335,8 @@
             </div>
         </footer>
 
-        
-        <script src="" async defer></script>
+
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script src="assets/js/main.js" async defer></script>
     </body>
 </html>
