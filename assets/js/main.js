@@ -1,6 +1,14 @@
 window.addEventListener('load', function() {
 
   
+  document.querySelector('.btn-hamburger').addEventListener('click', function(e) {
+    console.log(this)
+    e.preventDefault();
+    this.classList.toggle('active');
+    document.querySelector('.menu-items').classList.toggle('active');
+    
+  })
+  
   /* Slider intro homepage */
   let swiperAccueil = new Swiper('.swiper-container-home', {
     speed: 1000,
@@ -92,6 +100,5 @@ window.addEventListener('load', function() {
         },
     });
 
-    
-   
+
 }); 

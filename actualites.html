@@ -12,8 +12,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
     <body>
         <!--[if lt IE 7]>
@@ -28,7 +29,7 @@
                 <img src="assets/img/logos/Logo_Merci-Julie.png" alt="logo Merci Julie" />
             </a>
             </div>
-
+    
             <ul class="menu-items">
                 <li class="sub-item"><a href="">accueil</a></li>
                 <li class="sub-item"><a href="">merci julie</a></li>
@@ -38,8 +39,12 @@
                 <li class="sub-item"><a href="">espace partenaires</a></li>
                 <li class="sub-item contact-item"><a href="">nous contacter</a></li>
             </ul>
-
-            <button class="btn-hamburger"></button>
+    
+            <a href="" class="btn-hamburger">
+                <div>
+                    <span class="icon-hamburger"></span>
+                </div>
+            </a>
         </nav>
 
         <!-- BreadCrumb -->
@@ -84,14 +89,23 @@
             </div>
         </div>
 
+        <!-- couper le texte des actualités en PHP (environ 150 caractères) -->
         <section class="container-bloc-actu">
 
-            <!-- rajouter classe xl pour le premier -->
+            <!-- rajouter classe xl pour le premier
+                Prévoir 2 calibres d'image pour ce xl :
+                Une de 766px de large et 315 de haut pour 1920px jusqu'à 715px puis une autre coupé 366x203 à partir de 715px -->
             <div class="bloc-image-txt xl">
                 <div class="card">
                     <div class="bloc-lien-image">
                         <a href="" class="btn-more orange invisible">en lire plus</a>
-                        <img src="assets/img/actubig.jpg" alt="" />
+                        <img src="assets/img/actubig.jpg"
+                             alt=""
+                             srcset="assets/img/actu4.jpg 366w,
+                             assets/img/actubig.jpg 870w
+                             "
+                                     sizes="(max-width: 715px) 320px,
+                                    " />
                     </div>
                     <div class="bloc-txt">
                         <span class="date">00/00/00</span>
@@ -289,24 +303,26 @@
 
 
         <footer id="footer">
-            <div class="cate-footer">
-                <p>Merci Julie</p>
-                <hr class="hr-white">
-                <a class="btn-more white" href="" >rejoindre l'équipe</a>
-            </div>
+            <div class="groupe1">
+                <div class="cate-footer">
+                    <p>Merci Julie</p>
+                    <hr class="hr-white">
+                    <a class="btn-more white" href="" >rejoindre l'équipe</a>
+                </div>
 
-            <div class="cate-footer">
-                <p>Espace partenaires</p>
-                <hr class="hr-white">
-                <a class="btn-more white" href="" >devenir partenaire</a>
-            </div>
+                <div class="cate-footer">
+                    <p>Espace partenaires</p>
+                    <hr class="hr-white">
+                    <a class="btn-more white" href="" >devenir partenaire</a>
+                </div>
 
-            <div class="cate-footer">
-                <p>Réseaux sociaux</p>
-                <hr class="hr-white">
-                <div class="bloc-network">
-                    <a href=""><i class="facebook"></i></a>
-                    <a href=""><i class="linkedin"></i></a>
+                <div class="cate-footer">
+                    <p>Réseaux sociaux</p>
+                    <hr class="hr-white">
+                    <div class="bloc-network">
+                        <a href=""><i class="facebook"></i></a>
+                        <a href=""><i class="linkedin"></i></a>
+                    </div>
                 </div>
             </div>
 
@@ -319,6 +335,8 @@
             </div>
         </footer>
 
+
         <script src="assets/js/actualites.js" async defer></script>
+        <script src="assets/js/main.js" async defer></script>
     </body>
 </html>
