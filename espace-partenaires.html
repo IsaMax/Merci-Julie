@@ -12,8 +12,9 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
     <body>
         <!--[if lt IE 7]>
@@ -21,26 +22,30 @@
         <![endif]-->
         
       
-        <!-- Menu principal -->
-        <nav id="nav">  
-            <div id="logo-nav">
-                <a href="home.html">
-                <img src="assets/img/logos/Logo_Merci-Julie.png" alt="logo Merci Julie" />
-            </a>
+       <!-- Menu principal -->
+       <nav id="nav">  
+        <div id="logo-nav">
+            <a href="home.html">
+            <img src="assets/img/logos/Logo_Merci-Julie.png" alt="logo Merci Julie" />
+        </a>
+        </div>
+
+        <ul class="menu-items">
+            <li class="sub-item"><a href="">accueil</a></li>
+            <li class="sub-item"><a href="">merci julie</a></li>
+            <li class="sub-item"><a href="">nos offres</a></li>
+            <li class="sub-item"><a href="">nos innovations</a></li>
+            <li class="sub-item"><a href="">actualités</a></li>
+            <li class="sub-item"><a href="">espace partenaires</a></li>
+            <li class="sub-item contact-item"><a href="">nous contacter</a></li>
+        </ul>
+
+        <a href="" class="btn-hamburger">
+            <div>
+                <span class="icon-hamburger"></span>
             </div>
-
-            <ul class="menu-items">
-                <li class="sub-item"><a href="">accueil</a></li>
-                <li class="sub-item"><a href="">merci julie</a></li>
-                <li class="sub-item"><a href="">nos offres</a></li>
-                <li class="sub-item"><a href="">nos innovations</a></li>
-                <li class="sub-item"><a href="">actualités</a></li>
-                <li class="sub-item"><a href="">espace partenaires</a></li>
-                <li class="sub-item contact-item"><a href="">nous contacter</a></li>
-            </ul>
-
-            <button class="btn-hamburger"></button>
-        </nav>
+        </a>
+    </nav>
 
         <!-- BreadCrumb -->
         <div class="bc">
@@ -156,24 +161,26 @@
 
 
         <footer id="footer">
-            <div class="cate-footer">
-                <p>Merci Julie</p>
-                <hr class="hr-white">
-                <a class="btn-more white" href="" >rejoindre l'équipe</a>
-            </div>
+            <div class="groupe1">
+                <div class="cate-footer">
+                    <p>Merci Julie</p>
+                    <hr class="hr-white">
+                    <a class="btn-more white" href="" >rejoindre l'équipe</a>
+                </div>
 
-            <div class="cate-footer">
-                <p>Espace partenaires</p>
-                <hr class="hr-white">
-                <a class="btn-more white" href="" >devenir partenaire</a>
-            </div>
+                <div class="cate-footer">
+                    <p>Espace partenaires</p>
+                    <hr class="hr-white">
+                    <a class="btn-more white" href="" >devenir partenaire</a>
+                </div>
 
-            <div class="cate-footer">
-                <p>Réseaux sociaux</p>
-                <hr class="hr-white">
-                <div class="bloc-network">
-                    <a href=""><i class="facebook"></i></a>
-                    <a href=""><i class="linkedin"></i></a>
+                <div class="cate-footer">
+                    <p>Réseaux sociaux</p>
+                    <hr class="hr-white">
+                    <div class="bloc-network">
+                        <a href=""><i class="facebook"></i></a>
+                        <a href=""><i class="linkedin"></i></a>
+                    </div>
                 </div>
             </div>
 
@@ -186,6 +193,7 @@
             </div>
         </footer>
 
-        <script src="assets/js/espace-partenaires.js" async defer></script>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script src="assets/js/main.js" async defer></script>
     </body>
 </html>

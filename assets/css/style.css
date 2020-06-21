@@ -139,6 +139,7 @@ a {
 
 .bc ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .bc ul li:before {
@@ -346,7 +347,7 @@ a {
 }
 
 .menu-items.active .sub-item:not(:last-child) {
-    margin-bottom: 4rem;
+    margin-bottom:2.5rem;
 }
 
 .menu-items.active .sub-item {
@@ -613,7 +614,7 @@ a {
 /* Gabarit image + texte */
 .container-img-txt {
     width: 1170px;
-    height: 732px;
+    height: auto;
     margin: 81px auto;
 }
 
@@ -656,11 +657,14 @@ a {
 
 /* Gabarit photo centrée (a effacer, dépend de la photo) */
 .photo-centre {
-    width: 1170px;
+    max-width: 1170px;
     height: auto;
-    background-color: #00000029;
     margin: 0 auto;
     margin-bottom: 87px;
+}
+
+.photo-centre img {
+    width: 100%;
 }
 
 .photo-centre.taille-gabarit {
@@ -745,10 +749,6 @@ a {
     left: 20px;
 }
 
-.swiper-container-home .swiper-slide {
-    position: relative;
-    overflow: hidden;
-}
 
 /******** Image temporaire ***********/
 .swiper-container-home .swiper-slide .img-slide {
@@ -961,33 +961,46 @@ a {
 }
 
 .slider-bloc.logos .swiper-container-multipleviews {
+    width: 1515px;
+    height: 100%; 
+    overflow: hidden;
+}
+
+.swiper-container-multipleviews img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-partenaires .swiper-container {
+    position: unset;
+}
+
+.container-partenaires .swiper-container .swiper-wrapper {
+    justify-content: space-between;
+}
+
+.container-partenaires {
+    position: relative;
+    padding: 0;
     width: 100%;
     height: 176px;
     box-shadow: 0px 3px 6px #00000029;
     background-color: #FFF;
-    padding: 0 12.5rem;
-    overflow: visible;
-}
-
-.swiper-container-multipleviews .slide-imgx6 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
 }
 
 .swiper-container-multipleviews .swiper-button-next {
-    right: 110px;
+    right: 6%;
 }
 
 .swiper-container-multipleviews .swiper-button-prev {
-    left: 110px;
+    left: 5%;
 }
 
 .swiper-container-multipleviews .swiper-pagination {
-    position: relative;
+    position: absolute;
     bottom: -40px;
-
 }
 
 .bloc-tb {
@@ -1010,6 +1023,11 @@ a {
     left: 100%;
     top: -23px;
     width: 575px;
+}
+
+.bloc-tb .container-bloc-tb {
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .bloc-tb .container-bloc-tb .bloc-top.home {
@@ -1193,6 +1211,12 @@ ul.white li:before {
 }
 
 
+.home .cards .card-item {
+    width: 100%;
+    max-width: 370px;
+    min-width: unset;
+}
+
 .container-txt-centre {
     display: flex;
     justify-content: center;
@@ -1224,7 +1248,7 @@ ul.white li:before {
 }
 
 .txt-multicolonne {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
     -webkit-columns: 2 565px; 
     -moz-columns: 2 565px; 
@@ -1278,7 +1302,8 @@ ul.white li:before {
 }
 
 #newsletter-big .bloc-newsletter {
-    width: 1156px;
+    max-width: 1156px;
+    width: 100%;
     height: 542px;
     background-color: #F19181;
     padding-top: 89px;
@@ -1415,7 +1440,7 @@ ul.white li:before {
 
 .cards .card-item {
     width: 33%;
-    min-width: 300px;
+    min-width: 350px;
     height: auto;
     text-align: center;
     margin-bottom: 67px;
@@ -1480,11 +1505,16 @@ ul.white li:before {
 .container-map-contact {
     height: 732px;
     background-color: var(--orange);
+    position: relative;
+}
+
+.container-map-contact .bloc-map-contact {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 230px;
-    position: relative;
+    width: 1420px;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .container-map-contact .zones-france {
@@ -1661,7 +1691,8 @@ ul.white li:before {
 
 .container-contact-form {
     position: absolute;
-    width: 108rem;
+       width: 100%;
+    max-width: 108rem;
     left: 50%;
     transform: translateX(-50%);
     height: 100%;
@@ -1840,6 +1871,11 @@ ul.white li:before {
     position: relative;
     left: 1rem;
     font-family: 'Roboto', sans-serif;
+    transition: all .2s;
+}
+
+.bloc-tri .elt.active .chevron-bas {
+    transform: rotate(-90deg) scale(1.5);
 }
 
 .bloc-tri span:hover {
@@ -2029,6 +2065,7 @@ ul.white li:before {
 
 .bloc-network.orange a {
     background-color: var(--orange);
+    transition: all .1s;
 }
 
 .bloc-network.orange a i:after {
@@ -2067,7 +2104,7 @@ ul.white li:before {
     font-family: 'Volkswagen-bold', sans-serif;
 }
 
-.liste-regions {
+.bloc-tri .liste {
     background-color: #F6F6F6;
     padding: 2rem;
     transform: scaleY(0);
@@ -2078,16 +2115,16 @@ ul.white li:before {
     z-index: 50;
 }
 
-.liste-regions.active {
+.bloc-tri .elt.active .liste {
     transform: scaleY(1);
 }
 
-.liste-regions .region {
+.liste .region {
     display: block;
     text-align: center;
 }
 
-.liste-regions .region:not(:last-child) {
+.liste .region:not(:last-child) {
     margin-bottom: 1rem;
 }
 
@@ -2118,6 +2155,8 @@ ul.white li:before {
     position: relative;
     height: 300px;
     margin-bottom: 191px;
+    max-width: 1420px;
+    margin: 0 auto;
 }
 
 .container-swiper-actu .swiper-actu {
@@ -2135,11 +2174,11 @@ ul.white li:before {
 }
 
 .container-swiper-actu .fleche-gauche {
-    left: 14%;
+    left: 1%;
 }
 
 .container-swiper-actu .fleche-droite {
-    right: 14%;
+    right: 1%;
 }
 
 .bloc-back {
@@ -2180,13 +2219,14 @@ ul.white li:before {
 }
 
 .container-blocs-colonnes {
-    width: 945px;
+    max-width: 945px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     margin-bottom: 97px;
     margin-top: 3rem;
     position: relative;
+    padding: 0 1rem;
 }
 
 .container-blocs-colonnes:after {
@@ -2347,7 +2387,8 @@ ul.white li:before {
 }
 
 .presentation-bloc.contact {
-    width: 1170px;
+    max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 90px;
 }
@@ -2394,4 +2435,13 @@ ul.white li:before {
     background-color:#EC6448 ;
     border: 1px solid #EC6448;
     color: #FFF;
+}
+
+.bloc-network.orange a:hover {
+    background-color: var(--gris);
+
+}
+
+.container-contact-form .titre-infos {
+    display: none;
 }
